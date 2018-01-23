@@ -1,0 +1,211 @@
+.detail-recharge-page{
+  // margin-top: -30px;
+  .vice-title{
+    font-size: 18px;
+    font-weight: bold;
+    color: #666;
+    margin-top: 30px;
+    margin-bottom: 18px;
+  }
+  .ebank-table-list {
+    text-align: center;
+    font-size: 14px;
+    tr,td {
+      border: 1px solid #ccc;
+    }
+    td,th {
+      padding: 8px 0;
+    }
+    thead tr {
+      background-color: #ededed;
+    }
+  }
+  .recharge-money{
+    font-size: 12px;
+    color: #999;
+    .money-input{
+      display: inline-block;
+      border: 1px solid #d5d5d5;
+      height: 32px;
+      input{
+        height: 100%;
+        border: none;
+      }
+      input:focus {
+        outline: none;
+      }
+      span{
+        margin-right: 6px;
+      }
+    }
+    .sub-note{
+      display: inline-block;
+      font-size: 12px;
+      color: red;
+      margin-left: 6px;
+    }
+    .rase-money{
+      font-size: 14px;
+      color: #666;
+      margin-top: 8px;
+      i{
+        color: #f60;
+        font-style: normal;
+      }
+    }
+    .note-text{
+      margin-top: 20px;
+      a{margin-left: 2px;}
+    }
+  }
+  .bank-contain{
+    margin-bottom: 32px;
+    .bank-list{
+      .bank{
+        width: 156px;
+        height: 46px;
+        display: inline-block;
+        vertical-align: top;
+        border: 1px solid #d7d7d7;
+        box-sizing: border-box;
+        margin-bottom: 24px;
+        cursor: pointer;
+        img {
+          width: 100%;
+        }
+        &:not(:nth-child(5n+5)){
+          margin-right: 34px;
+        }
+      }
+      .bank:hover{
+        border: 1px solid #f60;
+      }
+      .checked-bank{
+        border: 1px solid #f60;
+        position: relative;
+        &:after {
+          content:'';
+          width: 18px;
+          height: 18px;
+          background: url('./imgs/icon_ draw.png');
+          position: absolute;
+          right: 0;
+          bottom: 0;
+        }
+      }
+    }
+    .bank-icon{
+      vertical-align: text-bottom;
+      margin-right: 4px;
+    }
+    .card-info {
+      color: #fff;
+      width: 300px;
+      height: 161px;
+      margin-top: 16px;
+      display: inline-block;
+      background: url('./imgs/cardInfoBg.jpg') no-repeat;
+      padding:20px 25px 0;
+      box-sizing: border-box;
+      .userName {
+        padding-right: 10px;
+      }
+      .row-one {
+        .bank-name {
+          float: left;
+          line-height: 30px;
+        }
+      }
+      .bank-code {
+        font-size: 20px;
+        letter-spacing: 2px;
+        margin: 18px 0 20px;
+      }
+      .row-thr {
+        color: rgba(255,255,255,.8);
+      }
+    }
+    .card-info-right{
+      display: inline-block;
+      margin-left: 32px;
+      width: 370px;
+      vertical-align: bottom;
+      .top{
+        border: 1px solid #d7d7d7;
+        padding: 24px 0 24px 14px;
+        margin-bottom: 24px;
+        cursor: pointer;
+        div{
+          display: inline-block;
+          margin-left: 16px;
+          p{
+            color: #666;
+            &:last-child{
+              font-size: 12px;
+              color: #999;
+            }
+          }
+        }
+      }
+      .selected-top{
+        border: 1px solid #f60;
+      }
+      .note{
+        color: #333;
+      }
+    }
+  }
+  .checkbox-wrap {
+    .proto-name {
+      display: inline-block;
+      vertical-align: middle;
+      font-size: 14px;
+    }
+  }
+  .recharge-submit{
+    margin-top: 32px;
+    width: 178px;
+    height: 44px;
+    line-height: 44px;
+    font-size: 18px;
+    color: #fff;
+    background: #f60;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 2px;
+  }
+  .recharge-submit.disabled{
+    background: #ddd;
+    cursor: auto;
+  }
+  .recharge-explain{
+    font-size: 12px;
+    color: #999;
+    margin-top: 4px;
+  }
+  .ant-checkbox-wrapper:hover .ant-checkbox-inner, .ant-checkbox:hover .ant-checkbox-inner, .ant-checkbox-input:focus + .ant-checkbox-inner{
+    border-color: #f60;
+  }
+  .ant-checkbox-checked .ant-checkbox-inner, .ant-checkbox-indeterminate .ant-checkbox-inner{
+    background-color: #f60;
+    border-color: #f60;
+  }
+  .ant-tabs-bar{
+    border-bottom: none;
+  }
+  .ant-tabs-ink-bar{background-color: #fff;}
+  .ant-tabs-nav .ant-tabs-tab{
+    border: 1px solid #d7d7d7;
+    border-radius: 2px;
+    margin-bottom: 6px;
+    width: 154px;
+    padding: 10px 20px;
+    text-align: center;
+  }
+  .ant-tabs-nav .ant-tabs-tab-active{
+    color: #f60;
+    border: 1px solid #f60;
+  }
+  .ant-tabs-nav .ant-tabs-tab:hover{color: #f60;}
+
+}

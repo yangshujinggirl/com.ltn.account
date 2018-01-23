@@ -1,0 +1,117 @@
+.change-loginPsd-page {
+  background-color: #fff;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  .high-col {
+    color: #f60;
+  }
+  .deposit-content-wrap {
+    width: 1190px;
+    max-width: 1190px;
+    margin: 0 auto;
+    padding: 68px 0;
+    .part-l,.part-r {
+      width: 50%;
+      float: left;
+      box-sizing: border-box;
+    }
+    .part-l {
+      height: 460px;
+      border-right: 1px solid #d8d8d8;
+    }
+    .part-r {
+      font-size: 14px;
+      color: #999;
+    }
+    .form-content {
+      width: 400px;
+      font-size: 14px;
+      margin: 0 auto;
+      .row {
+        margin-bottom: 8px;
+        height: 52px;
+      }
+      input {
+        width: 100%;
+        height: 52px;
+        line-height: 52px;
+        border: 1px solid #d4d4d4;
+        padding-left: 20px;
+        box-sizing: border-box;
+      }
+      .go-leave-btn {
+        width: 400px;
+        text-align: center;
+        padding: 8px 0;
+        font-size: 16px;
+        color: #999;
+        cursor: pointer;
+        &:hover {
+          color: #f60;
+        }
+      }
+      .code-input {
+        width: 58%;
+        float: left;
+      }
+      .img-code,.phone-code {
+        width: 37%;
+        height: 100%;
+        float: right;
+        border: 1px solid #ddd;
+        overflow: hidden;
+        cursor: pointer;
+      }
+      .img-code {
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      //按钮样式
+      .ant-btn {
+        width: 100%;
+        height: 100%;
+        font-size: 16px;
+        background: #ff6600;
+        border: none;
+        border-radius: 0;
+      }
+      .phone-code {
+        line-height: 46px;
+        text-align: center;
+        color: #fff;
+        &.disabled {
+          button {
+            background: #ddd;
+            cursor: default;
+          }
+        }
+      }
+      //提交按钮
+      .submit-btn-row {
+        height: 54px;
+        &.disabled {
+          .ant-btn {
+            background: #ddd;
+          }
+        }
+      }
+    }
+    .reminder-infomation {
+      padding: 0 79px;
+      .introduction-hr {
+        padding-top: 10px;
+        margin-bottom: 40px;
+      }
+      .friendly-reminder {
+        .tips-title {
+          font-size: 16px;
+          color: #333;
+          margin-bottom: 16px;
+        }
+      }
+    }
+  }
+}

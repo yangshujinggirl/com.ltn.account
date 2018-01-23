@@ -1,0 +1,98 @@
+.address-page {
+  .add-address-content {
+    text-align: center;
+    font-size: 16px;
+    padding: 40px 0;
+    .add-btn {
+      display: block;
+      margin:0 auto;
+      width: 240px;
+      height:40px;
+      background-color: #f60;
+      color: #fff;
+      border: none;
+      margin-top: 20px;
+      cursor: pointer;
+    }
+  }
+  .account-table-list {
+    th,td {
+      font-size: 14px;
+      width: 20%;
+      color: #394043;
+    }
+    .go-edit,.go-del  {
+      padding: 0 8px;
+      cursor: pointer;
+    }
+    .go-edit {
+      color: #288bff;
+      border-right: 1px solid #394043;
+    }
+    .go-del {
+      color: #f60;
+    }
+  }
+  .edit-address-content {
+    .label ,.input-one,.input-two {
+      display: inline-block;
+      vertical-align: top;
+      font-size: 14px;
+      color: #888c8e;
+    }
+    .row {
+      margin-bottom: 18px;
+    }
+    input {
+      height: 35px;
+      line-height: 35px;
+      box-sizing: border-box;
+      padding-left:15px;
+      border: 1px solid #e2e2e2;
+    }
+    textarea {
+      resize: none;
+    }
+    .input-one {
+      width: 180px;
+    }
+    .input-two {
+      width: 520px;
+    }
+    .input-textarea {
+      width: 520px;
+      height: 164px;
+      border: 1px solid #e2e2e2;
+      padding: 15px;
+      box-sizing: border-box;
+    }
+    .label {
+      width: 100px;
+      text-align: left;
+      height: 35px;
+      line-height: 35px;
+    }
+    .account-error-wrwp {
+      margin:0 0 8px 100px;
+    }
+    .btn-wrap {
+      padding-left: 100px;
+      .save-btn {
+        width: 210px;
+        height: 40px;
+        border:none;
+        border-radius: 3px;
+        background: #f60;
+        font-size: 18px;
+        color: #fff;
+        cursor: pointer;
+        &.disabled {
+          background-color: #ccc;
+        }
+      }
+    }
+  }
+  .ant-cascader-picker {
+    width: 100%;
+  }
+}

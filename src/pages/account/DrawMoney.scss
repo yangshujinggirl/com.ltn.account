@@ -1,0 +1,71 @@
+.detail-drawmoney-page{
+  .vice-title{
+    font-size: 18px;
+    font-weight: bold;
+    color: #666;
+    margin-top: 48px;
+    margin-bottom: 18px;
+  }
+  .card-contain{
+    color: #fff;
+    width: 300px;
+    height: 161px;
+    background: url('./imgs/cardInfoBg.jpg') no-repeat;
+    padding:20px 25px 0;
+    box-sizing: border-box;
+    .card-name{
+      font-size: 16px;
+    }
+    .card-number{
+      margin:24px 0 32px 0;
+      font-size: 20px;
+    }
+    .card-mes{
+      font-size: 12px;
+      span:first-child{
+        padding-right: 10px;
+      }
+    }
+  }
+  .draw-money-input{
+    p{margin: 8px 0}
+    input{
+      padding-left: 0;
+      border: none;
+    }
+    input:focus{
+      outline: inherit;
+    }
+    .input{
+      display: inline-block;
+      margin-right: 16px;
+      padding-right: 8px;
+      border: 1px solid #d5d5d5;
+    }
+    .sub-note {
+      display: inline-block;
+      margin-left: 6px;
+    }
+
+    .submit-contain{
+      padding-left: 70px;
+      button{
+        width: 180px;
+        height: 45px;
+        background: #f60;
+        border-radius: 4px;
+        color: #fff;
+        font-size: 18px;
+      }
+      .disabled{
+        background: #e1e1e1;
+        cursor:default;
+      }
+    }
+    .check-contain{margin-top: 10px;}
+  }
+  .rule-explain{
+    width: 787px;
+    color: #999;
+  }
+}

@@ -1,0 +1,28 @@
+//充值限额表
+.ant-modal-content {
+  .ant-modal-title {
+    font-size: 16px;
+    text-align: center;
+  }
+  .limits-wrap {
+    height: 230px;
+    overflow: auto;
+  }
+  .limits-tables {
+    color: #6a6a6a;
+    text-align: center;
+    thead tr {
+      font-size: 14px;
+      background-color: #ececec;
+    }
+    thead th {
+      padding: 10px 0;
+    }
+    tbody td {
+      padding: 6px 0;
+    }
+    tr:nth-child(even) {
+      background-color: #ececec;
+    }
+  }
+}

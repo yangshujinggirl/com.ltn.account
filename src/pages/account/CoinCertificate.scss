@@ -1,0 +1,162 @@
+
+.coin-certificate-pages {
+  $high:#ff6600;
+  .part-one {
+    padding: 80px 0 80px 70px;
+    background-color: #FFF;
+    margin-top:20px;
+    border: 1px solid #e0e0e0;
+    .secrity {
+      color: #fff;
+      font-size: 58px;
+      text-align: center;
+      line-height: 211px;
+      width: 514px;
+      height: 211px;
+      background:url('./imgs/coinCertificate_bg_1.png') no-repeat ;
+      display: inline-block;
+      vertical-align: middle;
+    }
+    .form-content {
+      width: 400px;
+      display: inline-block;
+      vertical-align: middle;
+      margin-left: 40px;
+      .row {
+        margin-bottom: 10px;
+        height: 46px;
+      }
+      input {
+        width: 100%;
+        height: 100%;
+        line-height: 46px;
+        padding-left: 20px;
+        box-sizing: border-box;
+      }
+      .ant-btn {
+        font-size: 16px;
+        width: 100%;
+        height: 100%;
+        background: #ff6600;
+        background: linear-gradient(to right, #ff9f00,50%, #ff6600);
+        background: -webkit-linear-gradient(left, #ff9f00,50%, #ff6600);
+        background: -moz-linear-gradient(left center, #ff9f00, #ff6600);
+        background: -webkit-gradient(linear, left center, right center,from(#ff9f00), to(#ff6600));
+        background: -o-linear-gradient(left,#ff9f00, #ff6600);
+        background: -ms-linear-gradient(left,#ff9f00, #ff6600);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff9f00', endColorstr='#ff6600',GradientType=0 );
+        border: none;
+        border-radius: 0;
+      }
+      .submit-btn-row {
+        height: 46px;
+        margin-bottom: 10px;
+        &.disabled {
+          button {
+            background:#ddd;
+          }
+        }
+      }
+      .code-input {
+        width: 58%;
+        float: left;
+      }
+      .img-code {
+        width: 37%;
+        height: 100%;
+        float: right;
+        border: 1px solid #ddd;
+        overflow: hidden;
+        cursor: pointer;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .go-return {
+        text-align: center;
+        color: #f60;
+        font-size: 14px;
+        cursor: pointer;
+      }
+      .error-tips {
+        color: #f60;
+        font-size: 14px;
+      }
+    }
+  }
+  .info {
+    margin-bottom: 54px;
+    .hd {
+      font-size: 22px;
+      height: 36px;
+      line-height: 36px;
+      color: #333;
+      font-weight: bold;
+      background:url('./imgs/coinCertificate_icon3.png') no-repeat left center;
+      padding-left:58px;
+      border-bottom: 1px solid #e0e0e0;
+      margin: 20px 0;
+    }
+    .list {
+      font-size: 16px;
+      color: #666;
+      padding:0 48px;
+      .tip:not(:last-child) {
+        line-height: 24px;
+        margin-bottom: 20px;
+      }
+    }
+  }
+  .copy {
+    display: none;
+    width: 466px;
+    height: 258px;
+    background-color:#fff;
+    position: fixed;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    z-index: 9999;
+    text-align: center;
+    .tips {
+      text-align: left;
+      border-bottom: 1px solid #ccc;
+      padding-top:12px;
+      .line {
+        display: inline-block;
+        color: $high;
+        font-size: 14px;
+        line-height: 34px;
+        padding:0 44px;
+        border-bottom: 2px solid $high;
+        position:relative;
+        bottom:-1px;
+      }
+    }
+    .copyBtn {
+      width: 108px;
+      height: 36px;
+      background-color: $high;
+      font-size: 18px;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      -webkit-border-radius: 4px;
+    }
+    .content1 {
+      padding:0;
+      font-size: 14px;
+      line-height: 24px;
+      color: #666;
+      padding-top:46px;
+    }
+    .value {
+      margin:24px 0 24px;
+      .look {
+        color: #3ab8ff;
+      }
+    }
+  }
+}

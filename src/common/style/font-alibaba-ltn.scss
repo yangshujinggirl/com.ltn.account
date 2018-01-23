@@ -1,0 +1,32 @@
+
+@font-face {font-family: "ltn-iconfont";
+  src: url($cdnHost+'/lib/alibaba/webfonts/ltn-iconfont/iconfont.eot?t=12321'); /* IE9*/
+  src: url($cdnHost+'/lib/alibaba/webfonts/ltn-iconfont/iconfont.eot?t=12321#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url($cdnHost+'/lib/alibaba/webfonts/ltn-iconfont/iconfont.woff') format('woff'),
+  url($cdnHost+'/lib/alibaba/webfonts/ltn-iconfont/iconfont.ttf?t=12321') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url($cdnHost+'/lib/alibaba/webfonts/ltn-iconfont/iconfont.svg?t=12321#ltn-iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.ltn-iconfont {
+  font-family:"ltn-iconfont" !important;
+  font-size:16px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-top-arrow:before { content: "\e625"; }
+
+.icon-weibo:before { content: "\e64b"; }
+
+.icon-jiantou1:before { content: "\e644"; }
+
+.icon-weixin:before { content: "\e613"; }
+
+.icon-kefu:before { content: "\e720"; }
+
+.icon-qcode:before { content: "\e788"; }
+
+.icon-fanhui:before { content: "\e600"; }
+
+.icon-gengduo:before { content: "\e601"; }

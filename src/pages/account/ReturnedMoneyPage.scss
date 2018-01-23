@@ -1,0 +1,131 @@
+.return-money-page {
+  //头部tab
+  .head-components {
+    height: 50px;
+    border-bottom: 1px solid #e2e2e2;
+    margin-bottom: 30px;
+    .left-name {
+      float: left;
+      .title {
+        display: inline-block;
+        width: 100px;
+        font-weight: bold;
+        line-height: 47px;
+        text-align: center;
+        border-bottom: 3px solid rgba(0,0,0,0);
+        color: #333;
+        margin: 0 10px 0 0;
+        cursor: pointer;
+        &:hover,&.selected {
+          border-bottom: 3px solid #f60;
+          color: #f60;
+        }
+      }
+    }
+    .right-info {
+      float: right;
+      img {
+        vertical-align: middle;
+      }
+      .info-text {
+        color: #999;
+        display: inline-block;
+        vertical-align: middle;
+        line-height: 50px;
+        padding-left: 8px;
+      }
+    }
+  }
+
+  .record-pandect {
+    background: #f7f7f7;
+    margin-bottom: 30px;
+    .pandect-wrap {
+      padding: 20px 0;
+      color: #666;
+      height: 100%;
+      font-size: 0;
+      text-align: center;
+    }
+    .item {
+      width: 33%;
+      display: inline-block;
+      vertical-align: middle;
+      padding: 20px 0;
+      &:not(:last-child) {
+        border-right:1px dashed #ddd;
+      }
+      .key {
+        font-size: 16px;
+        color: #666;
+      }
+      .value {
+        font-size: 36px;
+        color: #333;
+        padding-top: 10px;
+      }
+    }
+  }
+  .tips-content {
+    position: relative;
+    padding-left: 50px;
+    font-size: 12px;
+    color: #333;
+    margin-bottom: 30px;
+    &:after {
+      position: absolute;
+      left: 0;
+      top: 0;
+      content: '';
+      width: 32px;
+      height: 32px;
+      background: url('./imgs/icon-tips.png') no-repeat;
+    }
+    .item {
+      margin: 0;
+      line-height: 32px;
+      height: 32px;
+    }
+  }
+  .time-line {
+    padding: 10px 0;
+    border-bottom: 1px solid #e2e2e2;
+    margin-bottom: 30px;
+    .lable,
+    .to,
+    .date-form{
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 28px;
+      text-align: center;
+    }
+    .label {
+      font-weight: bold;
+    }
+    .date-form {
+      width: 170px;
+      height: 28px;
+      margin-left: 10px;
+    }
+    .to {
+      margin-left: 10px;
+    }
+  }
+  .record-content-list {
+    .account-table-list {
+      td,th{
+        width: 20%;
+        vertical-align: top;
+      }
+      .red-c {
+        color: #f60;
+      }
+      .link-url {
+        color: #6a6a6a;
+        &:hover {
+          color: #f60;
+        }
+      }
+    }
+  }
+}

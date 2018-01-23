@@ -1,0 +1,60 @@
+.detail-personal-page{
+  .safe-star-contain{
+    background: #f7f7f7;
+    height: 60px;
+    padding-top: 16px;
+    padding-left: 16px;
+    span{
+      font-size: 18px;
+      color: #333;
+    }
+    img{
+      margin-left: 5px;
+      &:nth-child(2){
+        margin-left: 11px;
+      }
+    }
+    .right{float: right;}
+  }
+  .info-wrap{
+    margin: 44px auto 0;
+    width: 890px;
+    .list{
+      height: 80px;
+      padding-top: 30px;
+      color: #999;
+      border-bottom: 1px solid #ececec;
+      .name{
+        font-size: 16px;
+        color: #666;
+        display: inline-block;
+        width: 64px;
+        margin-right: 166px;
+      }
+      .icon{
+        display: inline-block;
+        width: 30px;
+        margin-right: 20px;
+        margin-left: 30px;
+        text-align: center;
+        vertical-align: middle;
+      }
+      .right{
+        display: inline-block;
+        float: right;
+        text-align: right;
+        margin-right: 30px;
+      }
+      .edit{
+        cursor: pointer;
+        float: right;
+        color: #f60;
+        margin-right: 30px;
+      }
+      .no-certificate{
+        color: #f00;
+        margin-right: 20px;
+      }
+    }
+  }
+}

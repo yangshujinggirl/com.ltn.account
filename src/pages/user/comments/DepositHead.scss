@@ -1,0 +1,39 @@
+.deposit-components-head {
+  background-color: #fff;
+  color: #666;
+  box-shadow: 0 4px 4px rgba(0,0,0,.1);
+  padding: 16px 0;
+  width: 100%;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  .user-wrap {
+    max-width: 1190px;
+    margin: 0 auto;
+  }
+  .logo {
+    width: 118px;
+    img {
+      width: 100%;
+      vertical-align: top;
+    }
+  }
+  .logo,.page-title {
+    display:inline-block;
+    vertical-align: middle;
+  }
+  .page-title {
+    height: 48px;
+    border-left: 2px solid #d8d8d8;
+    padding-left: 22px;
+    margin-left: 22px;
+    .level-one {
+      font-size: 24px;
+      line-height: 100%;
+    }
+    .level-two {
+      color: #f60;
+      font-size: 14px;
+      line-height: 24px;
+    }
+  }
+}

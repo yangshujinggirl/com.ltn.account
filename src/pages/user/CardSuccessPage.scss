@@ -1,0 +1,84 @@
+.card-success-page {
+  height: 100%;
+  background-color: #fff;
+  position: relative;
+  .main-content-action {
+    max-width: 1190px;
+    margin: 0 auto;
+    padding-bottom:30px;
+    img {
+      cursor: pointer;
+    }
+    .pro-title {
+      font-size:24px;
+      padding: 30px 0 10px;
+      color: #666;
+      border-bottom: 1px solid #d8d8d8;
+    }
+    .pro-list {
+      padding: 40px 0;
+      text-align: center;
+      .item {
+        display: inline-block;
+        vertical-align: middle;
+        width: 350px;
+        height: 254px;
+        padding: 0 50px;
+        box-sizing: border-box;
+        box-shadow: 0 0 8px rgba(0,0,0,.1);
+        cursor: pointer;
+        &:nth-child(2) {
+          margin: 0 42px;
+        }
+        &:hover {
+          .invest-btn {
+            transform: translate(-50%,0);
+            transition: all 0.2s linear;
+          }
+        }
+      }
+      .row-one {
+        font-size: 18px;
+        padding-top: 30px;
+        color: #666;
+      }
+      .row-two {
+        font-size: 38px;
+        color: #f60;
+        margin: 20px 0 0;
+      }
+      .row-thr {
+        color: #999;
+        padding: 8px 0;
+        .label {
+          padding-right: 40px;
+        }
+      }
+      .bot-content {
+        font-size: 14px;
+        border-top: 1px solid #eee;
+        position: relative;
+        padding-top: 20px;
+        overflow: hidden;
+        .money-num {
+          height: 40px;
+          line-height: 40px;
+        }
+        .invest-btn {
+          width: 230px;
+          height: 40px;
+          color: #fff;
+          line-height: 40px;
+          background-color: #f60;
+          position: absolute;
+          bottom:0;
+          left:50%;
+          transform: translate(-50%,100%);
+          &.disabled{
+            background-color: #636363;
+          }
+        }
+      }
+    }
+  }
+}

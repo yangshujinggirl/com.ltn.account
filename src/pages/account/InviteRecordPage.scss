@@ -1,0 +1,70 @@
+.invite-record-page {
+  .headline {
+    font-size: 18px;
+    padding: 20px 0;
+    text-align: left;
+  }
+  .canvas-list {
+    text-align: center;
+    padding: 40px 0 60px;
+    .canvas-item {
+      display: inline-block;
+      position: relative;
+      &:not(:last-child) {
+        margin-right: 60px;
+      }
+      .showInfo-text {
+        color: #999;
+        position: absolute;
+        left: 50%;
+        top:50%;
+        transform: translate(-50%,-50%);
+        -webkit-transform: translate(-50%,-50%);
+      }
+      .circle-num {
+        font-size: 22px;
+        color: #666;
+      }
+    }
+  }
+  .tab-toggle {
+    font-size: 20px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #e2e2e2;
+    padding-bottom: 10px;
+    .item {
+      width: 100px;
+      height: 30px;
+      line-height: 30px;
+      font-size: 16px;
+      float: left;
+      text-align: center;
+      margin-right:10px;
+      border: 1px solid #fff;
+      cursor: pointer;
+      &:hover,&.selected {
+        border: 1px solid #ff5900;
+        border-radius: 20px;
+        color: #ff5900;
+      }
+    }
+  }
+  .account-table-list {
+    td,th{
+      width: 12.5%;
+    }
+    .one-l {
+      color: #f60;
+    }
+    .anticon-check:before {
+      font-size: 16px;
+    }
+  }
+  .ant-progress-circle-trail {
+    stroke:#eaeaea;
+  }
+  .ant-progress-status-success .ant-progress-circle-path,
+  .ant-progress-circle-path {
+    stroke: #f60;
+  }
+}

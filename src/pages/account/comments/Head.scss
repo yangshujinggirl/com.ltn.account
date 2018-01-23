@@ -1,0 +1,49 @@
+.head-components-wrap{
+  .head-components {
+    height: 50px;
+    border-bottom: 1px solid #e2e2e2;
+    margin-bottom: 14px;
+    .left-name {
+      float: left;
+      .title {
+        width: 100px;
+        font-weight: bold;
+        line-height: 47px;
+        text-align: center;
+        border-bottom: 3px solid #f60;
+        color: #f60;
+        margin: 0;
+      }
+    }
+    .right-info {
+      float: right;
+      img {
+        vertical-align: middle;
+      }
+      .info-text {
+        color: #999;
+        display: inline-block;
+        vertical-align: middle;
+        line-height: 50px;
+        padding-left: 8px;
+      }
+    }
+  }
+  .notice-contain{
+    height: 34px;
+    background: #fff6ec;
+    font-size: 12px;
+    line-height: 34px;
+    margin-top: -30px;
+    overflow: hidden;
+    width: 100%;
+    span{
+      display: inline-block;
+      margin-right: 100px;
+      img{
+        margin-right: 6px;
+        vertical-align: middle;
+      }
+    }
+  }
+}

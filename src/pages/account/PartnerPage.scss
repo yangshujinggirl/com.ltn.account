@@ -1,0 +1,360 @@
+.partner-page {
+  .high-col {
+    color: #f60;
+  }
+  .partner-pandect {
+    height: 190px;
+    background-color: #f7f7f7;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 20px 0;
+    .part-one,.part-two {
+      height: 100%;
+      box-sizing: border-box;
+      display: inline-block;
+      vertical-align: middle;
+    }
+    .part-one {
+      padding: 30px 0 0 0;
+      text-align: center;
+      width: 25%;
+      border-right: 1px dashed #ddd;
+      .go-award {
+        color: #6a6a6a;
+        padding-left: 8px;
+        &:hover {
+          color: #f60;
+        }
+      }
+      .total-account {
+        font-size: 16px;
+      }
+      .value {
+        font-size: 36px;
+        padding-top: 20px;
+      }
+    }
+    .part-two {
+      padding: 30px 0 0 40px;
+      width: 75%;
+      .level-row-process {
+        padding-bottom: 60px;
+      }
+      .name-l,.level-r {
+        display: inline-block;
+        vertical-align: middle;
+      }
+      .name-l {
+        font-weight: bold;
+        color: #333;
+        margin-right: 30px;
+      }
+      .level-r {
+        height: 6px;
+        position: relative;
+        .pro-line,.circle-list {
+          vertical-align: top;
+          display: inline-block;
+        }
+        .pro-line {
+          width: 420px;
+          height: 6px;
+          background-color: #d2d2d2;
+        }
+        .cir-ite {
+          float: left;
+          width: 6px;
+          height: 6px;
+          background-color:#d2d2d2;
+          margin-left: 8px;
+        }
+        .real-time-pro {
+          height: 6px;
+          background-color: #f60;
+          position: absolute;
+          left: 0;
+          top:0;
+          &.levelOne {
+            width: 200px;
+          }
+          &.levelTwo {
+            width: 347px;
+          }
+        }
+        .level-status {
+          text-align: center;
+          position: absolute;
+          color: #666666;
+          top:50%;
+          transform: translateY(-50%);
+          width: 34px;
+          height: 34px;
+          line-height: 34px;
+          border-radius: 50%;
+          border: 1px solid #e2e2e2;
+          background-color: #fff;
+          .par-lev {
+            color: #666;
+            width: 100px;
+            position: absolute;
+            left: 50%;
+            bottom:-40px;
+            transform: translateX(-50%);
+          }
+          &.sta-one {
+            left: 40px;
+          }
+          &.sta-two {
+            left: 180px;
+          }
+          &.sta-thr {
+            left: 320px;
+          }
+          &.current {
+            width: 54px;
+            height: 54px;
+            color: #fff;
+            line-height: 54px;
+            background-color: #ffb531;
+            border-color: #ffb531;
+          }
+        }
+      }
+      .level-row-value {
+        color: #666;
+        .it {
+          display: inline-block;
+          vertical-align: middle;
+          margin-right: 60px;
+        }
+        .value {
+          font-size: 18px;
+          color: #3a3a3a;
+        }
+      }
+    }
+  }
+  .partner-introduce {
+    padding: 30px 0;
+    .ite {
+      width: 48%;
+      height: 192px;
+      float: left;
+      border: 1px solid #e2e2e2;
+      padding: 20px 20px 0 20px;
+      box-sizing: border-box;
+      cursor: pointer;
+      &:last-child{
+        float: right;
+      }
+      &:hover {
+        border-color: #f60;
+        box-shadow: 0 0 10px #eaeaea;
+      }
+      .ll,.rr {
+        display: inline-block;
+        vertical-align: top;
+      }
+      .ll {
+        text-align: center;
+        margin: 0 40px 0 20px;
+        .leve-name {
+          font-size: 18px;
+          padding-top: 10px;
+        }
+      }
+      .rr {
+        width: 230px;
+        font-size: 12px;
+        .rows {
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+  .get-partner-ways {
+    margin-bottom: 50px;
+    .get-title {
+      margin-bottom: 15px;
+    }
+    .ways-wrap {
+      text-align: center;
+      border: 1px solid #e2e2e2;
+      padding: 30px 0 20px;
+    }
+    .ways-list {
+      width: 840px;
+      display: inline-block;
+      margin-bottom: 20px;
+      .tt {
+        display: inline-block;
+        width: 20%;
+        height: 65px;
+        position: relative;
+        cursor: pointer;
+
+        &:hover {
+          .share-icon {
+            top:-20px;
+          }
+        }
+        .share-link-url {
+          position: relative;
+        }
+        .share-icon {
+          position: absolute;
+          left: 50%;
+          top:0;
+          margin-left: -32px;
+          transition: top 0.1s linear;
+        }
+      }
+      .share-weixin {
+        display: none;
+        width: 474px;
+        height: 230px;
+        padding: 40px 0 0 40px;
+        background: url('./imgs/partner_tips_bg1.png') no-repeat center;
+        box-sizing: border-box;
+        position: absolute;
+        top:-220px;
+        left: -90px;
+        text-align: left;
+        .code-wrap {
+          float: left;
+        }
+        .r-intro {
+          font-size: 12px;
+          width: 55%;
+          float: left;
+          margin-left: 30px;
+          .tit {
+            color: #000;
+            font-weight: bold;
+            margin-bottom: 16px;
+          }
+        }
+      }
+      .weixin-tt:hover {
+        .share-weixin {
+          display: block;
+        }
+      }
+    }
+  }
+  .recommend-award-content {
+    position: relative;
+    border: 1px solid #e2e2e2;
+    padding-top: 70px;
+    margin-bottom: 50px;
+    .info-one,
+    .case-one,
+    .case-two,
+    .case-thr,
+    .case-four,
+    .info-two {
+      padding: 10px 35px;
+    }
+    .case-one {
+      .key,
+      .input,
+      .recomend-btn,
+      .little-tips {
+        display: inline-block;
+        line-height: 40px;
+        vertical-align: middle;
+        margin-right: 8px;
+      }
+      .key {
+        color: #666;
+        font-weight: bold;
+      }
+      .input {
+        width: 260px;
+        height: 40px;
+        border: 1px solid #d7d7d7;
+      }
+      .recomend-btn {
+        width: 80px;
+        height: 40px;
+        border-radius: 4px;
+        background-color: #f60;
+        color: #fff;
+      }
+      .little-tips {
+        font-size: 12px;
+        color: #f60;
+      }
+      .error-text {
+        color: #f60;
+        padding: 10px 0;
+      }
+    }
+    .case-two {
+      .yuangong {
+        display: inline-block;
+        vertical-align: top;
+        font-size: 22px;
+        color: #f60;
+        line-height: 31px;
+      }
+      .tips {
+        display: inline-block;
+        vertical-align: top;
+        font-size: 12px;
+        padding-left: 40px;
+        box-sizing: border-box;
+        width: 486px;
+        line-height: 31px;
+        height: 31px;
+        background: url('./imgs/partner_tips_bg.png') no-repeat center;
+      }
+    }
+    .case-four {
+      .key {
+        display: inline-block;
+        color: #666;
+        font-weight: bold;
+      }
+      .value {
+        color: #f60;
+        font-size: 18px;
+        display: inline-block;
+      }
+    }
+    .info-two {
+      background-color: #f7f7f7;
+      padding: 20px 35px;
+    }
+    .label {
+      text-align: center;
+      line-height: 36px;
+      width: 142px;
+      height: 36px;
+      color: #fff;
+      background: url('./imgs/partner_recomend_bg0.png') center no-repeat;
+      position: absolute;
+      left: 20px;
+      top:-12px;
+    }
+  }
+  .static-recomend {
+    position: relative;
+    padding: 70px 0 10px 20px;
+    border: 1px solid #e2e2e2;
+    .label {
+      text-align: center;
+      line-height: 36px;
+      width: 212px;
+      height: 36px;
+      color: #fff;
+      background: url('./imgs/partner_recomend_bg1.png') center no-repeat;
+      position: absolute;
+      left: 20px;
+      top:-12px;
+    }
+    img {
+      margin-right: 50px;
+    }
+  }
+}

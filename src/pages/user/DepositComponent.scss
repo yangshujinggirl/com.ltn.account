@@ -1,0 +1,294 @@
+//开户流程公共样式
+.deposit-component-page {
+  background-color: #fff;
+  width: 100%;
+  .high-col {
+    color: #f60;
+  }
+  .blue-col {
+    color: #288bff;
+    cursor: pointer;
+  }
+  .deposit-content-wrap {
+    width: 1190px;
+    min-width: 1190px;
+    margin: 0 auto;
+    padding: 68px 0;
+    .part-l,.part-r {
+      width: 50%;
+      float: left;
+      box-sizing: border-box;
+    }
+    .part-l {
+      height: 460px;
+      border-right: 1px solid #d8d8d8;
+    }
+    .part-r {
+      font-size: 14px;
+      color: #666;
+    }
+    //左侧表单
+    .form-content {
+      width: 400px;
+      margin: 0 auto;
+      text-align: center;
+      .row {
+        position: relative;
+      }
+      .row:not(:last-child) {
+        margin-bottom: 26px;
+      }
+      .ant-btn {
+        width: 100%;
+        height: 100%;
+        font-size: 16px;
+        background: #ff6600;
+        border: none;
+        border-radius: 0;
+      }
+      input {
+        width: 100%;
+        height: 52px;
+        line-height: 52px;
+        padding-left: 20px;
+        box-sizing: border-box;
+      }
+      .placeholder-label {
+        font-size: 14px;
+        text-align: right;
+        color: #333;
+        position: absolute;
+        left: 20px;
+        top:50%;
+        transform: translateY(-50%);
+      }
+      .phone-code {
+        width: 124px;
+        height: 46px;
+        line-height: 46px;
+        position: absolute;
+        right: 4px;
+        top:50%;
+        color: #fff;
+        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        color: #fff;
+        cursor: pointer;
+        &.disabled {
+          .ant-btn {
+            background: #ddd;
+          }
+        }
+      }
+      .img-code {
+        width: 37%;
+        height: 52px;
+        float: right;
+        border: 1px solid #d4d4d4;
+        overflow: hidden;
+        cursor: pointer;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .go-leave-btn {
+        display: inline-block;
+        text-align: center;
+        padding: 8px 0;
+        font-size: 16px;
+        color: #999;
+        cursor: pointer;
+        &:hover {
+          color: #f60;
+        }
+      }
+      //提交按钮
+      .submit-btn-row {
+        height: 54px;
+        margin-top: 16px;
+        &.disabled {
+          .ant-btn {
+            background: #ddd;
+            cursor: default;
+          }
+        }
+      }
+      .agree-protocol-conten {
+        // padding:0 0 16px;
+        text-align: left;
+        .protocols {
+          color: #333;
+          line-height: 14px;
+          display: inline-block;
+          vertical-align: middle;
+          a {
+            color: #288bff;
+          }
+        }
+      }
+    }
+    //右侧
+    .reminder-infomation {
+      padding: 0 79px;
+      .introduction-hr {
+        padding-top: 10px;
+        margin-bottom: 40px;
+      }
+      .friendly-reminder {
+        .tips-title {
+          font-size: 16px;
+          color: #333;
+          margin-bottom: 16px;
+        }
+      }
+    }
+  }
+  //select 选中框
+  .ant-select {
+    width: 100%;
+    .ant-select-selection {
+      border-radius: 0;
+    }
+    .ant-select-selection--single {
+      height: 52px;
+      width: 100%;
+      line-height: 52px;
+      font-size: 14px;
+      color: #999;
+      padding-left: 20px;
+      box-sizing: border-box;
+      border: 1px solid #d4d4d4;
+    }
+    .ant-select-selection__rendered {
+      line-height: 52px;
+      height: 100%;
+    }
+    .ant-select-focused .ant-select-selection, .ant-select-selection:focus, .ant-select-selection:active {
+      border-color: #f60;
+    }
+  }
+}
+
+//确认银行卡
+.depost-verifycard-page {
+  .verfiy-left-content {
+    color: #666;
+    font-size: 18px;
+    .row-ver {
+      line-height: 30px;
+      margin-bottom: 30px;
+      &.row-five {
+        margin-bottom: 6px;
+      }
+    }
+    .key,.value {
+      display: inline-block;
+    }
+    .key {
+      width: 150px;
+      text-align: right;
+    }
+    .value {
+      color: #000;
+      text-align: left;
+      padding-left: 40px;
+      position: relative;
+      &.high-col {
+        color: #f60;
+      }
+    }
+    .check-row-ver {
+      width: 400px;
+      position: absolute;
+      left: 40px;
+      bottom:-28px;
+    }
+    .error-text-wrap {
+      padding-left: 190px;
+    }
+    .tips-mb {
+      padding-left: 190px;
+      color: #f60;
+      font-size: 14px;
+    }
+    .change-mb,.change-mobile-input  {
+      display: inline-block;
+      width: 200px;
+      height: 30px;
+      line-height: 30px;
+      margin-right: 10px;
+    }
+    .change-mobile-input {
+      font-size: 14px;
+      color: #999;
+    }
+    .go-change {
+      color: #f60;
+      cursor: pointer;
+    }
+  }
+  .verfiy-right-content {
+    padding-left: 80px;
+    .verfiy-title {
+      font-size: 18px;
+      color: #333;
+      margin-bottom: 20px;
+    }
+    .form-content {
+      margin: 0;
+    }
+    .row {
+      width: 400px;
+      height: 54px;
+      position: relative;
+      margin-bottom: 20px;
+      .code-input {
+        line-height: 52px;
+        border: 1px solid #d4d4d4;
+        padding-left: 20px;
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+      }
+      .forget-btn-enter{
+        width: 110px;
+        height: 46px;
+        line-height: 46px;
+        text-align: center;
+        background-color: #f60;
+        position: absolute;
+        right: 4px;
+        top:50%;
+        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        color: #fff;
+        cursor: pointer;
+        color: #f60;
+        background: none;
+      }
+    }
+    .phone-text {
+      text-align: left;
+    }
+  }
+}
+//selected 背景色
+.ant-select-dropdown-menu-item-active {
+  background-color: #fff;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none !important;
+    margin: 0;
+}
+//确认提现，充值页面成功弹框
+.depost-confim-modal {
+  .confirm-content {
+    font-size: 14px;
+    padding-left: 20px;
+    .wrong-text {
+      color: #f60;
+    }
+  }
+}

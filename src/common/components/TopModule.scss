@@ -1,0 +1,128 @@
+.components-top-content {
+  margin-bottom: 20px;
+  .top-wrap {
+    max-width: 1190px;
+    margin: 0 auto;
+  }
+  .top-module-content {
+    font-size: 14px;
+    color: #666;
+    padding: 8px 0;
+    .part-l {
+      float: left;
+      line-height: 20px;
+      .kefu {
+        width: 180px;
+        display: inline-block;
+        vertical-align: middle;
+      }
+      .ltn-iconfont {
+        font-size: 19px;
+        margin-right: 10px;
+        vertical-align: middle;
+        color: #666;
+        &:hover {
+          cursor: pointer;
+          color: #f60;
+        }
+      }
+      .weibo-link {
+        text-decoration: none;
+      }
+      .icon-weixin {
+        position: relative;
+        overflow: hidden;
+        &:hover {
+          .weixin-code {
+            visibility:visible; opacity:1;
+          }
+        }
+        .weixin-code {
+          visibility:hidden; opacity:0;
+          position: absolute;
+          left: 50%;
+          bottom:-8px;
+          transform: translate(-50%,-100%);
+          -webkit-transform: translate(-50%,100%);
+          transition: all 0.4s linear;
+          box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.3);
+          .arrow {
+            position: absolute;
+            top:0;
+            left:50%;
+            margin-left: -6.5px;
+            margin-top: -5px;
+          }
+        }
+
+      }
+    }
+    .part-r {
+      float: right;
+      line-height: 20px;
+      .item {
+        display: inline-block;
+        vertical-align: top;
+        padding: 0 12px;
+        color: #666;
+        &:not(:first-child):hover{
+          color: #f60;
+        }
+
+      }
+      .safe-loginOut {
+        cursor: pointer;
+      }
+    }
+  }
+  .nav-head-content {
+    background-color: #fff;
+    height: 70px;
+    .part-l {
+      float: left;
+      padding: 11px 0 0;
+      .logo {
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 10px;
+        width: 118px;
+        img {
+          width: 100%;
+          vertical-align: top;
+        }
+      }
+      .slogin-gif {
+        vertical-align: middle;
+      }
+    }
+    .part-r {
+      float: right;
+      .item {
+        text-align: center;
+        display: inline-block;
+        vertical-align: middle;
+        width: 96px;
+        height: 70px;
+        font-size: 18px;
+        line-height: 70px;
+        color: #333;
+        box-sizing: border-box;
+        border-bottom: 3px solid transparent;
+        &:not(:last-child) {
+          &:hover,&.selected {
+            color: #f60;
+            border-bottom: 3px solid #f60;
+          }
+        }
+      }
+      .account-item {
+        width: 110px;
+        height: 40px;
+        line-height: 40px;
+        background-color: #ff6f20;
+        margin-left: 16px;
+        color: #fff;
+      }
+    }
+  }
+}

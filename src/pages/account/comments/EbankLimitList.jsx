@@ -1,0 +1,337 @@
+import React from 'react';
+
+//中国农业银行
+const dataListNH=[
+  {
+    name:'借记卡',
+    condition:'K码',
+    singleFund:'1000',
+    singleDay:'1000',
+    row:'3',
+  },
+  {
+    name:'',
+    condition:'浏览器证书+动态口令卡',
+    singleFund:'1000',
+    singleDay:'3000',
+    row:'3',
+  },
+  {
+    name:'',
+    condition:'Key宝总行证书+动态口令卡',
+    singleFund:'无限额',
+    singleDay:'无限额',
+    row:'3',
+  }
+]
+//浦发银行
+const dataListPF=[
+  {
+    name:'借记卡',
+    condition:'数字证书版',
+    singleFund:'10万',
+    singleDay:'20万',
+    row:'2',
+  },
+  {
+    name:'',
+    condition:'动态密码版',
+    singleFund:'5万',
+    singleDay:'5万',
+    row:'3',
+  }
+]
+//交通
+const dataListJT=[
+  {
+    name:'借记卡',
+    condition:'手机注册',
+    singleFund:'5000',
+    singleDay:'5000',
+    row:'2',
+  },
+  {
+    name:'',
+    condition:'证书用户',
+    singleFund:'100万',
+    singleDay:'100万',
+    row:'3',
+  }
+]
+//邮储银行
+const dataListYZ=[
+  {
+    name:'借记卡',
+    condition:'手机动态密码版',
+    singleFund:'3000',
+    singleDay:'3000',
+    row:'2',
+  }
+]
+//中国建设银行
+const dataListJS=[
+  {
+    name:'借记卡',
+    condition:'手机动态密码版',
+    singleFund:'3000',
+    singleDay:'3000',
+    row:'4',
+  },
+  {
+    name:'',
+    condition:'帐户支付',
+    singleFund:'1000',
+    singleDay:'1000',
+    row:'4',
+  },
+  {
+    name:'',
+    condition:'动态口令卡',
+    singleFund:'5000',
+    singleDay:'5000',
+    row:'4',
+  },
+  {
+    name:'',
+    condition:'网银盾（U宝）',
+    singleFund:'50万',
+    singleDay:'50万',
+    row:'4',
+  }
+]
+//招商银行
+const dataListZS=[
+  {
+    name:'借记卡',
+    condition:'开通大众版网上支付功能',
+    singleFund:'500',
+    singleDay:'500',
+    row:'2',
+  },
+  {
+    name:'',
+    condition:'开通专业版网上支付功能',
+    singleFund:'无限额',
+    singleDay:'无限额',
+    row:'2',
+  }
+]
+//广发银行
+const dataListGF=[
+  {
+    name:'借记卡',
+    condition:'手机动态验证码',
+    singleFund:'3000',
+    singleDay:'3000',
+    row:'2',
+  },
+  {
+    name:'',
+    condition:'KEY盾',
+    singleFund:'30万',
+    singleDay:'30万',
+    row:'2',
+  }
+]
+//中国银行
+const dataListZG=[
+  {
+    name:'借记卡',
+    condition:'专业版',
+    singleFund:'5万',
+    singleDay:'50万',
+    row:'2',
+  },
+  {
+    name:'',
+    condition:'网银快付',
+    singleFund:'1000',
+    singleDay:'5000',
+    row:'2',
+  }
+]
+//中国工商银行
+const dataListGS=[
+  {
+    name:'借记卡',
+    condition:'通过柜面注册，静态支付密码',
+    singleFund:'300',
+    singleDay:'300',
+    row:'4',
+  },
+  {
+    name:'',
+    condition:'办理电子银行口令卡，开通短信认证',
+    singleFund:'2000',
+    singleDay:'5000',
+    row:'4',
+  },
+  {
+    name:'',
+    condition:'办理电子银行口令卡(无需开通短信认证)',
+    singleFund:'500',
+    singleDay:'1000',
+    row:'4',
+  },
+  {
+    name:'',
+    condition:'办理U盾',
+    singleFund:'100万',
+    singleDay:'100万',
+    row:'4',
+  },
+]
+//光大银行
+const dataListGD=[
+  {
+    name:'借记卡',
+    condition:'动态密码支付',
+    singleFund:'5000',
+    singleDay:'5000',
+    row:'3',
+  },
+  {
+    name:'',
+    condition:'阳光网盾',
+    singleFund:'20万',
+    singleDay:'50万',
+    row:'3',
+  },
+  {
+    name:'',
+    condition:'动态口令牌',
+    singleFund:'50万',
+    singleDay:'50万',
+    row:'3',
+  }
+]
+//北京
+const dataListBJ=[
+  {
+    name:'借记卡',
+    condition:'普通',
+    singleFund:'300',
+    singleDay:'300',
+    row:'3',
+  },
+  {
+    name:'',
+    condition:'动态密码',
+    singleFund:'1万',
+    singleDay:'1万',
+    row:'3',
+  },
+  {
+    name:'',
+    condition:'证书',
+    singleFund:'100万',
+    singleDay:'100万',
+    row:'3',
+  }
+]
+//中国民生银行
+const dataListMS=[
+  {
+    name:'借记卡',
+    condition:'无证书客（个人网上银行大众版）',
+    singleFund:'300',
+    singleDay:'300',
+    row:'3',
+  },
+  {
+    name:'',
+    condition:'贵宾版（浏览器证书）',
+    singleFund:'5000',
+    singleDay:'5000',
+    row:'3',
+  },
+  {
+    name:'',
+    condition:'贵宾版（U宝）',
+    singleFund:'50万',
+    singleDay:'50万',
+    row:'3',
+  }
+]
+//中信银行
+const dataListZX=[
+  {
+    name:'借记卡',
+    condition:'文件证书',
+    singleFund:'1000',
+    singleDay:'5000',
+    row:'2',
+  },
+  {
+    name:'',
+    condition:'数字证书(USBKEY)',
+    singleFund:'100万',
+    singleDay:'100万',
+    row:'2',
+  }
+]
+//华夏银行
+const dataListHX=[
+  {
+    name:'借记卡',
+    condition:'直接支付',
+    singleFund:'300',
+    singleDay:'1000',
+    row:'2',
+  },
+  {
+    name:'',
+    condition:'电子钱包用户(USBKEY)',
+    singleFund:'5万',
+    singleDay:'10万',
+    row:'2',
+  }
+]
+const dataTrans ={
+  '0':dataListZG,
+  '9':dataListHX,
+  '3':dataListNH,
+  '6':dataListPF,
+  '4':dataListJT,
+  'y':dataListYZ,
+  '1':dataListGS,
+  '2':dataListJS,
+  'b':dataListMS,
+  'd':dataListZX,
+  '8':dataListGD,
+  '5':dataListZS,
+  't':dataListGF,
+  'h':dataListBJ,
+  '9':dataListHX
+}
+const EbankLimitList=({gateId})=>{
+  let datalist = dataTrans[gateId]||[];
+  return (
+    <table className="ebank-table-list">
+      <thead>
+        <tr>
+          <th>卡种</th>
+          <th>所需条件</th>
+          <th>单笔限额（元）</th>
+          <th>每日限额（元）</th>
+        </tr>
+      </thead>
+      <tbody>
+        {
+          datalist.map((el,index)=>(
+            <tr key={index}>
+              {
+                index==0&&<td rowSpan={el.row}>借记卡</td>
+              }
+              <td >{el.condition}</td>
+              <td >{el.singleFund}</td>
+              <td >{el.singleDay}</td>
+            </tr>
+          ))
+        }
+      </tbody>
+    </table>
+  )
+}
+
+export default EbankLimitList;

@@ -1,0 +1,198 @@
+
+.user-components-page {
+  width: 100%;
+  height: 100%;
+  .user-main-action {
+    width: 100%;
+    height: 610px;
+    background: url('./imgs/user_bg.jpg') no-repeat center;
+    background-size: cover;
+  }
+  .user-content-wrap {
+    width: 1190px;
+    min-width: 1190px;
+    margin: 0 auto;
+    padding-top: 40px;
+    .part-l {
+      color: #fff;
+      float: left;
+      padding-top: 58px;
+    }
+    .part-r {
+      float: right;
+      width: 440px;
+      height: 500px;
+      background-color: #fff;
+    }
+    .component-form-content {
+      padding: 30px 56px 40px 56px;
+      .head-content {
+        margin-bottom: 30px;
+        .texts {
+          float: left;
+          font-size: 24px;
+          line-height: 100%;
+          color: #3a3a3a;
+        }
+        .go-register {
+          float: right;
+          font-size: 20px;
+          line-height: 24px;
+          color: #f60;
+        }
+      }
+      .form-wrap {
+        font-size: 14px;
+        .row {
+          margin-bottom: 8px;
+          height: 40px;
+        }
+        input {
+          width: 100%;
+          height: 40px;
+          line-height: 40px;
+          padding-left: 20px;
+          box-sizing: border-box;
+        }
+        .code-input {
+          width: 58%;
+          float: left;
+        }
+        .img-code,.phone-code {
+          width: 37%;
+          height: 100%;
+          float: right;
+          border: 1px solid #ddd;
+          overflow: hidden;
+          cursor: pointer;
+        }
+        .img-code {
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+        .ant-btn {
+          font-size: 16px;
+          width: 100%;
+          height: 100%;
+          background: #ff6600;
+          background: linear-gradient(to right, #ff9f00,50%, #ff6600);
+          background: -webkit-linear-gradient(left, #ff9f00,50%, #ff6600);
+          background: -moz-linear-gradient(left center, #ff9f00, #ff6600);
+          background: -webkit-gradient(linear, left center, right center,from(#ff9f00), to(#ff6600));
+          background: -o-linear-gradient(left,#ff9f00, #ff6600);
+          background: -ms-linear-gradient(left,#ff9f00, #ff6600);
+          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff9f00', endColorstr='#ff6600',GradientType=0 );
+          border: none;
+          border-radius: 0;
+        }
+        //提交按钮
+        .submit-btn-row {
+          height: 40px;
+          margin: 10px 0 20px;
+          .ant-btn {
+            font-size: 18px;
+          }
+          &.disabled {
+            button {
+              background: #ddd;
+              cursor: default;
+            }
+          }
+        }
+        .phone-code {
+          line-height: 40px;
+          text-align: center;
+          color: #fff;
+          border: none;
+          &.disabled {
+            button {
+              background: #ddd;
+            }
+          }
+        }
+        .error-tips {
+          padding-left: 20px;
+          color: #f60;
+          padding-bottom: 12px;
+        }
+        .forget-pwd-wrap {
+          text-align: right;
+          .forget-psd {
+            display: inline-block;
+            text-align: right;
+            color: #f60;
+          }
+        }
+        .bg-wrap {
+          text-align: center;
+          padding-top:20px;
+        }
+      }
+    }
+  }
+}
+//注册页面
+.user-register-page {
+  .referrer-write {
+    margin-bottom: 8px;
+    height: 20px;
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    &.show{
+      height: 70px;
+      .refer-input{
+        display: inherit;
+      }
+    }
+    .refer-lable {
+      display: inline-block;
+      padding-left: 20px;
+      color: #333;
+      cursor: pointer;
+      position: relative;
+      .arrow {
+        position: absolute;
+        top:50%;
+        right: -6px;
+        transform: translateY(-50%);
+        width: 9px;
+        height: 9px;
+        background: url('./imgs/user_arrow_top.jpg') center no-repeat;
+        &.selected {
+          background: url('./imgs/user_arrow_bot.jpg') center no-repeat;
+        }
+      }
+    }
+    .refer-input {
+      margin-top: 8px;
+      display: none;
+      transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
+  .register-error-tips {
+    color: #f60;
+    padding-left:20px;
+  }
+  .submit-btn-row {
+    margin: 10px 0 20px;
+  }
+  .server-protocol {
+    display: block;
+    width: 100%;
+    border-top: 1px solid #e4e4e4;
+    position: relative;
+    margin-top: 4px;
+    .protocol-url {
+      color: #288bff;
+      padding: 0 12px;
+      position: absolute;
+      left: 50%;
+      top:50%;
+      transform: translate(-50%,-50%);
+      -webkit-transform: translate(-50%,-50%);
+      background-color: #fff;
+    }
+  }
+}

@@ -1,0 +1,186 @@
+.bird-coin-page {
+  .bird-pandect {
+    height: 157px;
+    background: #f7f7f7;
+    .pandect-wrap {
+      padding: 20px 30px;
+      height: 100%;
+      box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      font-size: 0;
+    }
+    .part-one,.part-two {
+      font-size: 14px;
+      width: 50%;
+      height: 100%;
+      display: inline-block;
+      vertical-align: middle;
+      box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+    }
+    .part-one {
+      border-right:1px dashed #ddd;
+      padding-top:20px;
+      .item {
+        display: inline-block;
+        vertical-align: top;
+        &:not(:last-child) {
+          margin-right: 60px;
+        }
+        .key {
+          font-size: 16px;
+          color: #666;
+          padding-bottom: 8px;
+        }
+        .value {
+          font-size: 14px;
+          color: #ff5900;
+          .big-num {
+            font-size: 36px;
+          }
+        }
+      }
+    }
+    .part-two {
+      font-size: 14px;
+      padding:8px 0 0 30px;
+      .row {
+        display: inline-block;
+        vertical-align: top;
+        &:nth-child(2) {
+          margin-left: 100px
+        }
+      }
+      .item {
+        &:not(:last-child) {
+          margin-bottom:20px;
+        }
+        .key {
+          color: #999;
+        }
+        .value {
+          font-size: 16px;
+          color: #666;
+        }
+      }
+    }
+  }
+  .get-bird-way {
+    .way-title {
+      padding: 30px 0 20px;
+      margin: 0;
+    }
+    .list {
+      .item {
+        width: 209px;
+        height: 125px;
+        border: 1px solid #ebebeb;
+        display: inline-block;
+        margin-right: 16px;
+        text-align: center;
+        cursor: pointer;
+        border-radius: 4px;
+        &:hover {
+          box-shadow: 0 0 8px 5px #f3f3f3;
+          .text {
+            color: #f60;
+          }
+        }
+        &:nth-child(1) {
+          .icon {
+            background: url('./imgs/icon_bird0.png') no-repeat;
+          }
+          &:hover {
+            .icon {
+              background: url('./imgs/icon_bird00.png') no-repeat;
+            }
+          }
+        }
+        &:nth-child(2) {
+          .icon {
+            background: url('./imgs/icon_bird1.png') no-repeat;
+          }
+          &:hover {
+            .icon {
+              background: url('./imgs/icon_bird11.png') no-repeat;
+            }
+          }
+        }
+        &:nth-child(3) {
+          .icon {
+            background: url('./imgs/icon_bird2.png') no-repeat;
+          }
+          &:hover {
+            .icon {
+              background: url('./imgs/icon_bird22.png') no-repeat;
+            }
+          }
+        }
+      }
+      .icon {
+        display: inline-block;
+        width: 87px;
+        height: 64px;
+      }
+      .text {
+        font-size: 16px;
+        color: #999;
+        margin-top: 10px;
+      }
+    }
+  }
+  .tips-content {
+    position: relative;
+    padding-left: 50px;
+    margin-top: 30px;
+    font-size: 12px;
+    color: #333;
+    &:after {
+      position: absolute;
+      left: 0;
+      top: 0;
+      content: '';
+      width: 32px;
+      height: 32px;
+      background: url('./imgs/icon-tips.png') no-repeat;
+    }
+    .item {
+      margin: 0;
+      line-height: 100%;
+      &:nth-child(1) {
+        margin-bottom: 10px;
+      }
+    }
+  }
+  .bird-coin-list {
+    margin-top: 60px;
+    .tab-toggle {
+      font-size: 20px;
+      margin-bottom: 30px;
+      border-bottom: 1px solid #e2e2e2;
+      padding-bottom: 10px;
+      .item {
+        width: 140px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 16px;
+        float: left;
+        text-align: center;
+        margin-right:10px;
+        border: 1px solid #fff;
+        cursor: pointer;
+        &:hover,&.selected {
+          border: 1px solid #ff5900;
+          border-radius: 20px;
+          color: #ff5900;
+        }
+      }
+    }
+    .account-table-list {
+      td,th{
+        width: 25%;
+        padding: 20px;
+      }
+    }
+  }
+}

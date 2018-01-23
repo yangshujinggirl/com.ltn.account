@@ -1,0 +1,73 @@
+.float-left-nav-content {
+  width: 40px;
+  position: fixed;
+  right:50%;
+  top:400px;
+  margin-right: -635px;
+  color: #ddd;
+  text-align: center;
+  font-size: 12px;
+  .icon-kefu,.icon-qcode,.icon-top-arrow {
+    font-size: 24px;
+   }
+   .item-kefu,.item-weixin,.icon-top-arrow {
+     background: rgba(0, 0, 0, 0.6);
+     cursor: pointer;
+   }
+  .item-kefu {
+    margin-bottom: 10px;
+    padding: 6px 0 12px;
+    .server-text {
+      line-height: 120%;
+    }
+  }
+  .item-weixin {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    margin-bottom: 10px;
+    .icon-qcode,.saoma-text {
+      width: 100%;
+      position: absolute;
+      left:50%;
+      top:50%;
+      transform: translate(-50%,-50%);
+      -webkit-transform: translate(-50%,-50%);
+      cursor: pointer;
+      transition: all 0.3s linear;
+    }
+    .saoma-text {
+      font-size: 14px;
+      line-height: 120%;
+      visibility:hidden;
+      opacity:0;
+     }
+     .code-img {
+       position: absolute;
+       left: 0;
+       top:50%;
+       margin-left: -106px;
+       margin-top: -50px;
+       visibility:hidden;
+       opacity:0;
+     }
+    &:hover {
+      .saoma-text,.code-img  {
+        visibility:visible; opacity:1;
+      }
+      .icon-qcode {
+        visibility:hidden; opacity:0;
+      }
+    }
+  }
+  .icon-top-arrow {
+    width: 40px;
+    height: 40px;
+    font-size: 24px;
+    visibility:hidden; opacity:0;
+    transition: all 0.3s linear;
+    &.show {
+      visibility:visible; opacity:1;
+    }
+  }
+}

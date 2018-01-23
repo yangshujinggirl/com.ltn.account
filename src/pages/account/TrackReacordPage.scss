@@ -1,0 +1,148 @@
+.track-reacord-page {
+  .record-pandect {
+    height: 255px;
+    background: #f7f7f7;
+    .pandect-wrap {
+      padding: 20px 0;
+      color: #666;
+      height: 100%;
+      box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      font-size: 0;
+    }
+    .part-one{
+      font-size: 14px;
+      width: 50%;
+      height: 100%;
+      display: inline-block;
+      vertical-align: middle;
+      box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      padding: 15px 0 0 40px;
+      .total-head {
+        margin-bottom: 20px;
+        .key {
+          font-size: 16px;
+        }
+        .value {
+          font-size: 36px;
+          color: #333;
+        }
+      }
+      .item {
+        display: inline-block;
+        vertical-align: top;
+        &:not(:last-child) {
+          margin-right: 60px;
+        }
+        .value {
+          font-size: 18px;
+          color: #333;
+        }
+        .project-num {
+          font-size: 14px;
+          color: #666;
+        }
+      }
+    }
+    .part-two {
+      border-left:1px dashed #ddd;
+      .btn-list {
+        padding-top:15px;
+        .product-btn {
+          margin-left: 16px;
+        }
+      }
+    }
+  }
+  .tips-content {
+    position: relative;
+    padding-left: 50px;
+    margin-top: 30px;
+    font-size: 12px;
+    color: #333;
+    &:after {
+      position: absolute;
+      left: 0;
+      top: 0;
+      content: '';
+      width: 32px;
+      height: 32px;
+      background: url('./imgs/icon-tips.png') no-repeat;
+    }
+    .item {
+      margin: 0;
+      line-height: 32px;
+      height: 32px;
+    }
+  }
+  .screen-tabs-list {
+    padding: 40px 0 30px;
+    .item {
+      padding: 10px 0;
+      .lable,
+      .to,
+      .date-form,
+      .date-tabs-list,
+      .deal-type-tabs-list {
+        display: inline-block;
+        vertical-align: middle;
+        line-height: 28px;
+        text-align: center;
+      }
+      .label {
+        font-weight: bold;
+      }
+      .date-form {
+        width: 170px;
+        height: 28px;
+        margin-left: 10px;
+      }
+      .to {
+        margin-left: 10px;
+      }
+      .it-tab {
+        float: left;
+        width: 70px;
+        height: 30px;
+        border-radius: 15px;
+        border: 1px solid rgba(0,0,0,0);
+        box-sizing: border-box;
+        margin-left: 10px;
+        cursor: pointer;
+        &:hover,&.selected {
+          border: 1px solid #f60;
+          color: #f60;
+        }
+      }
+      .date-tabs-list {
+        padding-left: 20px;
+      }
+      .deal-type-tabs-list {
+        padding-left: 10px;
+      }
+      &:nth-child(2) {
+        border-bottom: 1px solid #e2e2e2;
+      }
+    }
+  }
+  .account-table-list {
+      td,th{
+        width: 15%;
+        vertical-align: top;
+      }
+      td:nth-child(4) {
+        width: 24%;
+      }
+      .red-c {
+        color: #f60;
+      }
+      .link-url {
+        color: #6a6a6a;
+      }
+      .ingree {
+        color: #1e9ee7;
+        cursor: pointer;
+      }
+    }
+}

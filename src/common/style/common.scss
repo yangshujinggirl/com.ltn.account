@@ -1,0 +1,191 @@
+// 公用样式
+body,
+html {
+  font-family: PingFangSC,Helvetica,Arial,Microsoft YaHei,Droid Sans,sans-serif;
+  min-width  : 1190px;
+  overflow-x : auto;
+  height: 100%;
+  // height: inherit !important;
+  background: #f5f6f7;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.cf:after,
+.cf:before {
+  content: ' ';
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+.cf:after {
+  clear: both;
+}
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+  *zoom: 1;
+}
+//清除浮动
+.clear:after {
+  content: '';
+  height: 0;
+  display: block;
+  visibility: hidden;
+  clear: both;
+}
+//隐藏客服
+#udesk_btn{
+  display: none;
+}
+// 内容区域
+.ltn-content {
+  width : 1190px;
+  min-width: 1190px;
+  margin: 0 auto;
+}
+// 这是最顶级的 盒子
+.main-viewport {
+  height: 100%;
+  &>div {
+    height: 100%;
+  }
+}
+//账户各页面table表单样式；
+.account-table-list {
+  text-align: left;
+  thead tr{
+    font-size: 14px;
+    background-color: #f7f7f7;
+  }
+  td,th{
+    box-sizing: border-box;
+    padding:20px 15px;
+  }
+  tbody tr {
+    font-size: 12px;
+    color: #999;
+    border-bottom: 1px dashed #e2e2e2;
+  }
+}
+button {
+  outline-style: none;
+  border-radius: 0;
+  border: none;
+  cursor: pointer;
+}
+input,textarea{
+  border:1px solid #d4d4d4;
+  padding-left: 20px;
+  box-sizing: border-box;
+  color: #999;
+  &:focus {
+    outline:none;
+    border:1px solid #f60;
+  }
+}
+//placehoder样式
+textarea::-webkit-input-placeholder,
+input::-webkit-input-placeholder { /* WebKit browsers*/
+  color:#999;
+  font-size:14px;
+}
+textarea:-moz-placeholder,
+input:-moz-placeholder {  /* Mozilla Firefox 4 to 18*/
+  color:#999;font-size:14px;
+}
+textarea::-moz-placeholder,
+input::-moz-placeholder {  /* Mozilla Firefox 19+*/
+  color:#999;font-size:14px;
+}
+textarea:-ms-input-placeholder,
+input:-ms-input-placeholder { /* Internet Explorer 10+*/
+  color:#999;font-size:14px;
+}
+//日期控件样式更改
+.ant-calendar-picker {
+  -webkit-apperance:normal;
+  .ant-calendar-picker-icon:after{
+    font-size: 16px;
+    color: rgba(255, 0, 0, 0.43);
+  }
+}
+.ant-calendar-picker-icon:after{
+  font-size: 16px;
+  color: rgba(255, 0, 0, 0.43);
+}
+.ant-calendar-picker:hover .ant-calendar-picker-input:not(.ant-input-disabled) {
+  border-color: #f60;
+}
+.ant-calendar-date:hover {
+  background: #f60;
+}
+.ant-calendar-selected-day .ant-calendar-date {
+  background-color: #f60;
+  &:hover {
+    background-color: #f60;
+  }
+}
+//分页
+.ant-pagination  {
+  text-align: right;
+  padding: 40px 0;
+  .ant-pagination-item-active {
+    background-color: #f60;
+    border-color: #f60;
+  }
+  .ant-pagination-item-active:focus,
+  .ant-pagination-item-active:hover {
+    background-color: #f60;
+  }
+  .ant-pagination-item:focus,
+  .ant-pagination-item:hover {
+    border-color: #f60;
+    a {
+      color: #f60;
+    }
+  }
+  .ant-pagination-item-active a,
+  .ant-pagination-item-active:focus a,
+  .ant-pagination-item-active:hover a {
+    color: #fff;
+  }
+}
+//checkbox
+.ant-checkbox-wrapper {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 14px;
+  & >span {
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+.ant-checkbox-wrapper:hover .ant-checkbox-inner, .ant-checkbox:hover .ant-checkbox-inner, .ant-checkbox-input:focus + .ant-checkbox-inner {
+  border-color: #f60;
+}
+.ant-checkbox-checked .ant-checkbox-inner, .ant-checkbox-indeterminate .ant-checkbox-inner {
+  background-color: #f60;
+  border-color: #f60;
+}
+////页面tips;
+.anticon-question-circle {
+  margin-left: 6px;
+  cursor: pointer;
+  &:before {
+    color: #ffd152;
+  }
+}
